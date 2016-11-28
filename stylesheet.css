@@ -38,7 +38,6 @@ h1, h2, h3, h4, h5, h6, p {
 
 .list-item-card {
   display: flex;
-  flex-shrink: 0;
   align-items: center;
   justify-content: center;
   width: 250px;
@@ -47,6 +46,11 @@ h1, h2, h3, h4, h5, h6, p {
   border: 1px solid #ddd;
   border-radius: 3px;
   opacity: 1;
+}
+
+.list-item-card,
+.list-item-placeholder {
+  flex-shrink: 0;
 }
 
 .list-item-card:not(:last-child),
